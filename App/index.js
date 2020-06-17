@@ -30,8 +30,7 @@ const getRemaining = (time) => {
 export default function App() {
   const [selectedMinutes, setSelectedMinutes] = useState(0);
   const [selectedSeconds, setSelectedSeconds] = useState(0);
-
-  const [remainingTime, setRemainingTime] = useState(5);
+  const [remainingTime, setRemainingTime] = useState(0);
   const [running, setRunning] = useState(false);
   const intervalRef = useRef(null);
   let { minutes, seconds } = getRemaining(remainingTime);
